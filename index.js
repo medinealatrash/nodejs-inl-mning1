@@ -5,21 +5,7 @@ app.listen(3000, () => {
     console.log('API for smart home 1.1 up n running.')
 })
 
-/* CODE YOUR API HERE */
 
-/* app.get('/devices', (req, res) => {
-    res.json(db)
-})
- */
-
-// app.get('/:id/:on', (req, res) =>{
-//    let id= req.params.id;
-
-//     let onOff= req.params.on === "on" ? true : false;
-//     db.get('devices').find({id:id}).assign({on : onOff}).value();
-//     update();
-//     res.send({ msg: `device ${id} is now ${onOff}` });
-// })
 app.get('/:id/:on', (req, res) =>{
     let id= req.params.id;
 
