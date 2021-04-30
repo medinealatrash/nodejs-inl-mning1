@@ -30,6 +30,8 @@ app.listen(3000, () => {
 // skriva http://localhost:3000/VAC1/(valfri text) för att stopa dammsugaren
 // skriva http://localhost:3000/CAM1/on för att starta kameran
 // skriva http://localhost:3000/CAM1/(valfri text) för att stänga av kameran
+// skriva http://localhost:3000/AC1/on för att starta luftkonditioneringen
+// skriva http://localhost:3000/AC1/(valfri text) för att stänga luftkonditioneringen
  app.get('/:id/:on', (req, res) =>{
     let id= req.params.id;
 
